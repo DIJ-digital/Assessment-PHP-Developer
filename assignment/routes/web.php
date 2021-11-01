@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'MessageController@create');
+Route::get('/', [\App\Http\Controllers\MessageController::class, 'create']);
