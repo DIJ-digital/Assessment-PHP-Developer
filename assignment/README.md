@@ -2,7 +2,7 @@
 
 Requirements:
 - Composer
-- php 8.0 or higher
+- php 8.2 or higher
 - some database server
 
 ```bash
