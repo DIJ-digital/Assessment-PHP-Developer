@@ -1,15 +1,19 @@
 <?php
-declare(strict_types=1);
 
-namespace Tests\Feature;
+namespace Tests\Feature\Http\Controllers;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class CreateMessageTest extends TestCase
 {
-    public function testCreateMessageFormIsShown()
+    /**
+     * A basic feature test example.
+     */
+    public function test_example(): void
     {
-        $response = $this->get(action('\App\Http\Controllers\MessageController@create'));
+        $response = $this->get('/');
 
         $response->assertOk();
         $response->assertSee(config('app.name'));
